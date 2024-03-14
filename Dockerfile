@@ -11,5 +11,5 @@ WORKDIR /app
 ENV NODE_OPTIONS --openssl-legacy-provider
 COPY --from=build /app .
 #COPY --from=build /app/package*.json ./
-EXPOSE 3000
+EXPOSE 4000
 CMD ["npm","start"]
